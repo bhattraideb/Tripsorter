@@ -37,48 +37,48 @@ $ php test/index.php
 	use TripSorter\TransportableAbstract\TransportableAbstract;
 	use TripSorter\modules\travel\Travel;
 
-//** Create two tickets
-    $tickets = array(
-      CardFactory::create(array(
-        'source' => 'Madrid Metro Station',
-        'destination' => 'Barcelona Metro Station ',
-        'vehicle' => '78A train',
-        'seat' => '45B',
-        'gate' => null
-      )),
-      CardFactory::create(array(
-        'source' => 'Barcelona',
-        'destination' => 'Gerona Airport',
-        'vehicle' => 'Airport Bus',
-        'seat' => null,
-        'gate' => null
-      )),
-	  CardFactory::create(array(
-        'source' => 'Gerona Airport',
-        'destination' => 'Stockholm Airport',
-        'vehicle' => 'Flight SK455',
-        'seat' => '3A',
-        'gate' => '45B'
-      )),
-	  CardFactory::create(array(
-        'source' => 'Stockholm Airport',
-        'destination' => 'New York JFKS Airport',
-        'vehicle' => 'Flight SK22',
-        'seat' => '7B',
-        'gate' => '22'
-      ))
-    );
+	//** Create two tickets
+	    $tickets = array(
+	      CardFactory::create(array(
+		'source' => 'Madrid Metro Station',
+		'destination' => 'Barcelona Metro Station ',
+		'vehicle' => '78A train',
+		'seat' => '45B',
+		'gate' => null
+	      )),
+	      CardFactory::create(array(
+		'source' => 'Barcelona',
+		'destination' => 'Gerona Airport',
+		'vehicle' => 'Airport Bus',
+		'seat' => null,
+		'gate' => null
+	      )),
+		  CardFactory::create(array(
+		'source' => 'Gerona Airport',
+		'destination' => 'Stockholm Airport',
+		'vehicle' => 'Flight SK455',
+		'seat' => '3A',
+		'gate' => '45B'
+	      )),
+		  CardFactory::create(array(
+		'source' => 'Stockholm Airport',
+		'destination' => 'New York JFKS Airport',
+		'vehicle' => 'Flight SK22',
+		'seat' => '7B',
+		'gate' => '22'
+	      ))
+	    );
 
-//** Create three passengers
-    $passengers = array(
-      new Person('Deb'), 
-      new Person('Prasad'),
-      new Person('Bhattarai')
-    );
+	//** Create three passengers
+	    $passengers = array(
+	      new Person('Deb'), 
+	      new Person('Prasad'),
+	      new Person('Bhattarai')
+	    );
 
-//** Give the correct order to the crowd
-    $travel = new Travel($passengers, $tickets);
-	$route = $travel->sortTickets()->getTickets();
-	$passenger = $travel->getPassengers();
+	//** Give the correct order to the crowd
+	    $travel = new Travel($passengers, $tickets);
+		$route = $travel->sortTickets()->getTickets();
+		$passenger = $travel->getPassengers();
     
 //***route will be an array of the ordered tickets. If you would like you can also get passengers by calling getPassengers() method like above.
