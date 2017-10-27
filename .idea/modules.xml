@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../debprasad/.idea/debprasad.iml" filepath="$PROJECT_DIR$/../debprasad/.idea/debprasad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../laraProject/.idea/laraProject.iml" filepath="$PROJECT_DIR$/../laraProject/.idea/laraProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tripsorter.iml" filepath="$PROJECT_DIR$/.idea/tripsorter.iml" />
+    </modules>
+  </component>
+</project>
